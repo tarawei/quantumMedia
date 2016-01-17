@@ -23,6 +23,7 @@ body {
     border-bottom: 12px solid #7d8996;
     box-shadow: 1px 9px 12px rgba(113, 109, 109, 0.5);
     .logo-box{
+      padding-top: 10px;
       a{
         .logo{
           background-image: url("../images/desk_logo.png");
@@ -30,7 +31,7 @@ body {
           width: 120px;
           height: 74px;
           margin: 0 auto;
-          margin-bottom: 20px;
+          margin-bottom: 10px;
         }
       }
       button.toggle{
@@ -39,6 +40,7 @@ body {
     }
     .nav{
       text-align: center;
+      margin-bottom: 10px;
       &.close-nav{
         height: initial;
       }
@@ -46,6 +48,9 @@ body {
         display: inline-block;
         background-color: #b8b7b7;
         margin: 12px 40px;
+        font-size: 16.8px;
+        width: 112px;
+        font-family: 'Microsoft JhengHei UI', 'Microsoft JhengHei', sans-serif;
         a{
           color: black;
         }
