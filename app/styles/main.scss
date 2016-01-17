@@ -57,6 +57,23 @@ body {
       }
     }
   }
+  
+  #pagepiling{
+    .section{
+      &.about-us{
+        background-color: #faa;
+      }
+      &.service{
+        background-color: #ffa;
+      }
+      &.showreeol{
+        background-color: #afa;
+      }
+      &.contact{
+        background-color: #aff;
+      }
+    }
+  }
 }
 
 @import "mobile.scss";
