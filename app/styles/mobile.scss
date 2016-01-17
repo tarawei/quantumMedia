@@ -44,6 +44,7 @@
         transition: height .3s;
         text-align: center;
         height: 240px;
+        margin-bottom: 0;
         @include bg-gray(159,.32);
         &.close-nav{
           height: 0;
@@ -63,6 +64,9 @@
           }
         }
       }
+    }
+    .pages{
+      margin-top: 110px;
     }
   }
 }

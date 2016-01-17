@@ -4,8 +4,10 @@ jQuery(document).ready(function($) {
 	});
 	$(".nav a").on("click", function(){
 		$(".nav").addClass("close-nav");
+		$('.pages').slick('slickGoTo', $(this).data('index'));
 	});
 
-	  $('.pages').slick();
-
+	$('.pages').slick({
+		arrows: false,
+	});
 });

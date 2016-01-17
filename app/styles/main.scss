@@ -30,6 +30,9 @@ body {
     background-color: #FFF;
     border-bottom: 12px solid #7d8996;
     box-shadow: 1px 9px 12px rgba(113, 109, 109, 0.5);
+    position: fixed;
+    z-index: 1;
+    width: 100%;
     .logo-box{
       padding-top: 10px;
       a{
@@ -67,7 +70,23 @@ body {
   }
   
   .pages{
-    
+    flex: 1;
+    margin-top: 184px;
+    .slick-slide{
+      min-height: 500px;
+    }
+    .slick-slide.about-us{
+      background-color: #faa;
+    }
+    .slick-slide.service{
+      background-color: #ffa;
+    }
+    .slick-slide.showreel{
+      background-color: #afa;
+    }
+    .slick-slide.contact{
+      background-color: #aff;
+    }
   }
 }
 
