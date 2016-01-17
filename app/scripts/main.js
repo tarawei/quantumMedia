@@ -6,8 +6,6 @@ jQuery(document).ready(function($) {
 		$(".nav").addClass("close-nav");
 	});
 
-  $('#pagepiling').pagepiling({
-    direction: 'horizontal'
-  });
+	  $('.pages').slick();
 
 });

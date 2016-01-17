@@ -11,6 +11,10 @@ $icon-font-path: '../fonts/';
   padding: 0.2em 0;
 }
 
+html, body{
+  height: 100%;
+}
+
 /* Space out content a bit */
 body {
   padding-bottom: 20px;
@@ -18,6 +22,10 @@ body {
 }
 
 .wrapper{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+
   .header{
     background-color: #FFF;
     border-bottom: 12px solid #7d8996;
@@ -58,21 +66,8 @@ body {
     }
   }
   
-  #pagepiling{
-    .section{
-      &.about-us{
-        background-color: #faa;
-      }
-      &.service{
-        background-color: #ffa;
-      }
-      &.showreeol{
-        background-color: #afa;
-      }
-      &.contact{
-        background-color: #aff;
-      }
-    }
+  .pages{
+    
   }
 }
 
