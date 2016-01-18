@@ -5,7 +5,7 @@
     "bootstrap-sass": "~3.3.5",
     "modernizr": "~2.8.1",
     "fastclick": "~1.0.6",
-    "slick-carousel": "slick.js#~1.5.9"
+    "pagePiling.js": "pagepiling.js#~1.5.1"
   },
   "overrides": {
     "bootstrap-sass": {

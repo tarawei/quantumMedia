@@ -4,14 +4,16 @@ jQuery(document).ready(function($) {
 	});
 	$(".nav a").on("click", function(){
 		$(".nav").addClass("close-nav");
-		$('.pages').slick('slickGoTo', $(this).data('index'));
+		$.fn.pagepiling.moveTo($(this).data('index'));
 	});
 
 	$(".logo-box a").on("click", function(){
 		$('.pages').slick('slickGoTo', $(this).data('index'));
 	})
 
-	$('.pages').slick({
-		arrows: false,
+	$('#pagepiling').pagepiling({
+		direction: 'horizontal'
 	});
+
+	$.fn.pagepiling.setAllowScrolling(false);
 });

@@ -26,14 +26,13 @@ body {
 
 .wrapper{
   height: 100%;
-  display: flex;
-  flex-direction: column;
 
   .header{
     background-color: #FFF;
     border-bottom: 12px solid #7d8996;
     box-shadow: 1px 9px 12px rgba(113, 109, 109, 0.5);
     position: fixed;
+    top: 0px;
     z-index: 1;
     width: 100%;
     .logo-box{
@@ -73,24 +72,27 @@ body {
   }
   
   .pages{
-    flex: 1;
-    margin-top: 184px;
-    .slick-slide{
-      min-height: 500px;
-    }
-    .slick-slide.kv{
-    }
-    .slick-slide.about-us{
-      background-color: #faa;
-    }
-    .slick-slide.service{
-      background-color: #ffa;
-    }
-    .slick-slide.showreel{
-      background-color: #afa;
-    }
-    .slick-slide.contact{
-      background-color: #aff;
+    position: absolute;
+    width: 100%;
+    height: calc(100% - 184px);
+    top: 184px;
+
+    .section{
+      &.kv{
+        background-color: #aaf;
+      }
+      &.about-us{
+        background-color: #faa;
+      }
+      &.service{
+        background-color: #ffa;
+      }
+      &.showreel{
+        background-color: #afa;
+      }
+      &.contact{
+        background-color: #aff;
+      }
     }
   }
 
