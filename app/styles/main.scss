@@ -4,6 +4,10 @@ $icon-font-path: '../fonts/';
 @import "bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
 // endbower
 
+@mixin bg-gray($color, $opacity){
+  background-color: rgba($color,$color,$color, $opacity);
+}
+
 .browserupgrade {
   margin: 0.2em 0;
   background: #ccc;
@@ -17,7 +21,6 @@ html, body{
 
 /* Space out content a bit */
 body {
-  padding-bottom: 20px;
   background-image: url("../images/patten.jpg");
 }
 
@@ -75,6 +78,8 @@ body {
     .slick-slide{
       min-height: 500px;
     }
+    .slick-slide.kv{
+    }
     .slick-slide.about-us{
       background-color: #faa;
     }
@@ -88,6 +93,19 @@ body {
       background-color: #aff;
     }
   }
+
+  .footer{
+    position: relative;
+    text-align: center;
+    width: 100%;
+    height: 30px;
+    color: white;
+    @include bg-gray(56, .8);
+    .copyright{
+      margin-top: 5px;
+    }
+  }
 }
 
 @import "mobile.scss";
+@import "rwd.scss";
