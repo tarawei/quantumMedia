@@ -7,6 +7,10 @@ jQuery(document).ready(function($) {
 		$('.pages').slick('slickGoTo', $(this).data('index'));
 	});
 
+	$(".logo-box a").on("click", function(){
+		$('.pages').slick('slickGoTo', $(this).data('index'));
+	})
+
 	$('.pages').slick({
 		arrows: false,
 	});

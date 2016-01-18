@@ -1,3 +1,6 @@
+// bower:scss
+@import "bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_variables.scss";
+
 @mixin bg-gray($color, $opacity){
   background-color: rgba($color,$color,$color, $opacity);
 }
