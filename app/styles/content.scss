@@ -1,0 +1,63 @@
+@import "./untils";
+
+/**
+ * Pure
+ */
+.content{
+  .pages-block{
+    .page{
+      .title{
+        
+      }
+      .content{
+        
+      }
+      @import "./pages/kv";
+      @import "./pages/about-us";
+      @import "./pages/service";
+      @import "./pages/showreel";
+      @import "./pages/contact";
+    }
+  }
+}
+
+
+/**
+ * mobile
+ */
+
+/**
+ * mobile
+ */
+@media (max-width: $screen-xs-max) {
+  .content{
+    .pages-block{
+      .page{
+        .title{
+          
+        }
+        .content{
+          
+        }
+      }
+    }
+  }
+}
+
+/**
+ * desktop
+ */
+@media (min-width: $screen-xs-max) {
+  .content{
+    .pages-block{
+      .page{
+        .title{
+          
+        }
+        .content{
+          
+        }
+      }
+    }
+  }
+}

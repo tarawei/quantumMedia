@@ -27,6 +27,9 @@ body {
 .wrapper{
   height: 100%;
 
+  /**
+   ******** 這邊已重構到 header.scss ********
+   */
   .header{
     background-color: #FFF;
     border-bottom: 12px solid #7d8996;
@@ -70,6 +73,9 @@ body {
       }
     }
   }
+  /**
+   ******** end 這邊已重構到 header.scss ********
+   */
   
   .pages{
     position: absolute;
@@ -110,4 +116,3 @@ body {
 }
 
 @import "mobile.scss";
-@import "rwd.scss";
