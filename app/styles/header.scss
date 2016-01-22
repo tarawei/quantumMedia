@@ -38,7 +38,8 @@
  */
 @media (max-width: $screen-xs-max) {
   .header{
-    @include bg-gray(56, .8);
+    @include bg-gray(56, .9);
+    overflow: hidden;
     .logo-box{
       position: relative;
       a{
@@ -67,6 +68,7 @@
       }
     }
     .nav{
+      transition: height .3s;
       margin-bottom: 0;
       height: 240px;
       @include bg-gray(159,.32);
@@ -85,8 +87,6 @@
     }
   }
 }
-
-
 
 /**
  * desktop
@@ -116,7 +116,7 @@
       li{
         display: inline-block;
         background-color: #b8b7b7;
-        margin: 12px 40px;
+        margin: 12px 30px;
         font-size: 16.8px;
         width: 112px;
         font-family: 'Microsoft JhengHei UI', 'Microsoft JhengHei', sans-serif;

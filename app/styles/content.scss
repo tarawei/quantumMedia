@@ -4,13 +4,41 @@
  * Pure
  */
 .content{
+  position: relative;
+  background-color: #ecf1f5;
+  box-shadow: 1px 9px 12px rgba(113, 109, 109, 0.8);
+  margin:5px;
   .pages-block{
+    height: 100%;
     .page{
-      .title{
-        
-      }
-      .content{
-        
+      height: 100%;
+      .container{
+      &.container-page{
+        padding: 0px;
+        .title{
+          h1{
+            margin: 0px;
+            padding: 10px;
+            font-family: 'Microsoft JhengHei UI', 'Microsoft JhengHei', sans-serif;
+            font-size: 2em;
+          }
+        }
+        .p-content{
+          padding: 5px;
+          height: 100%;
+          &.colright{
+            float: right;
+          }
+          .txt{
+            height: 100%;
+            padding: 15px;
+            margin-bottom: 20px;
+            p{
+              line-height: 1.5;
+            }
+          }
+        }
+      }  
       }
       @import "./pages/kv";
       @import "./pages/about-us";
@@ -25,19 +53,17 @@
 /**
  * mobile
  */
-
-/**
- * mobile
- */
 @media (max-width: $screen-xs-max) {
   .content{
+    top: 101px;
     .pages-block{
       .page{
-        .title{
-          
-        }
-        .content{
-          
+        .container-page{
+          .title{
+            h1{
+              color: white;
+            }
+          }
         }
       }
     }
@@ -45,17 +71,90 @@
 }
 
 /**
- * desktop
+ * pad
  */
-@media (min-width: $screen-xs-max) {
+@media (min-width: $screen-sm-min) and (max-width: $screen-sm-max){
   .content{
+    top: 190px;
     .pages-block{
       .page{
-        .title{
-          
+        .container-page{
+          width: 100%;
+          .title{
+            h1{
+              color: white;
+            }
+          }
         }
-        .content{
-          
+      }
+    }
+  }
+}
+
+
+/**
+ * desktop
+ */
+@media (min-width:$screen-md-min) and (max-width: $screen-md-max){
+  .content{
+    width: 980px;
+    height: calc(100% - 205px);
+    top: 190px;
+    margin: 0 auto;
+    .pages-block{
+      .page{
+        margin: 0 auto;
+        .container-page{
+          position: relative;
+          height: 100%;        
+          .title{
+            position: absolute;
+            text-align: center;
+            height: 75%;
+            top: 50px;
+            border-right: 1px solid black;
+            h1{
+              color: black;
+              background-color: none;
+              top: 45%;
+              position: relative;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+
+/**
+ * large
+ */
+@media (min-width:$screen-lg-min) {
+  .content{
+    width: 1200px;
+    height: calc(100% - 205px);
+    top: 188px;
+    margin: 0 auto;
+    .pages-block{
+      .page{
+        margin: 0 auto;
+        .container-page{
+          position: relative;
+          height: 100%; 
+          .title{
+            position: absolute;
+            text-align: center;
+            height: 75%;
+            top: 50px;
+            border-right: 1px solid black;
+            h1{
+              color: black;
+              background-color: none;
+              top: 45%;
+              position: relative;
+            }
+          }
         }
       }
     }
