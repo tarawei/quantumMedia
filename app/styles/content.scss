@@ -5,45 +5,54 @@
  */
 .content{
   position: relative;
+  height: calc(100% - #{$header-height});
   .pages-block{
     height: 100%;
-    .page-nobg{
-      height: 100%;
-      position: relative;
-      margin: 5px;
-    }
     .page{
-      background-color: #ecf1f5;
-      box-shadow: 1px 9px 12px rgba(113, 109, 109, 0.8);
       margin:5px;
-      height: 100%;
+
+      &:first-of-type{
+        position: relative;
+        background-color: transparent;
+        display: none;
+      }
+
+      &.about-us, &.showreel{
+        display: none;
+      }
+
+      &:not(:first-of-type){
+        background-color: #ecf1f5;
+        box-shadow: 1px 9px 12px rgba(113, 109, 109, 0.8);
+      }
+
       .container{
-      &.container-page{
-        padding: 0px;
-        .title{
-          h1{
-            margin: 0px;
-            padding: 10px;
-            font-family: 'Microsoft JhengHei UI', 'Microsoft JhengHei', sans-serif;
-            font-size: 2em;
-          }
-        }
-        .p-content{
-          padding: 5px;
-          height: 100%;
-          &.colright{
-            float: right;
-          }
-          .txt{
-            height: 100%;
-            padding: 15px;
-            margin-bottom: 20px;
-            p{
-              line-height: 1.5;
+        &.container-page{
+          padding: 0px;
+          .title{
+            h1{
+              margin: 0px;
+              padding: 10px;
+              font-family: 'Microsoft JhengHei UI', 'Microsoft JhengHei', sans-serif;
+              font-size: 2em;
             }
           }
-        }
-      }  
+          .p-content{
+            padding: 5px;
+            height: 100%;
+            &.colright{
+              float: right;
+            }
+            .txt{
+              height: 100%;
+              padding: 15px;
+              margin-bottom: 20px;
+              p{
+                line-height: 1.5;
+              }
+            }
+          }
+        }  
       }
       @import "./pages/kv";
       @import "./pages/about-us";
@@ -117,21 +126,25 @@
         top: 60px;
       }      
       .page{
+        min-height: inherit;
         margin: 0 auto;
         .container-page{
           position: relative;
           height: 100%;        
           .title{
-            position: absolute;
             text-align: center;
-            height: 85%;
-            top: 30px;
+            height: calc(100% - 284px);
+            position: fixed;
+            top: 224px;
             border-right: 1px solid black;
+            max-width: 230px;
             h1{
               color: black;
               background-color: none;
-              top: 45%;
-              position: relative;
+              position: absolute;
+              top: 50%;
+              transform: translate(-50%, -50%);
+              left: 50%;
             }
           }
         }
@@ -156,15 +169,17 @@
       }   
       .page{
         margin: 0 auto;
+        height: 100%;
         .container-page{
           position: relative;
           height: 100%; 
           .title{
-            position: absolute;
             text-align: center;
-            height: 85%;
-            top: 35px;
+            height: calc(100% - 284px);
+            position: fixed;
+            top: 224px;
             border-right: 1px solid black;
+            max-width: 230px;
             h1{
               color: black;
               background-color: none;
