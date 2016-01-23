@@ -17,9 +17,7 @@
         display: none;
       }
 
-      &.about-us, &.showreel{
-        display: none;
-      }
+
 
       &:not(:first-of-type){
         background-color: #ecf1f5;
@@ -32,13 +30,14 @@
           .title{
             h1{
               margin: 0px;
-              padding: 10px;
+              padding: 10px 10px 10px 0;
               font-family: 'Microsoft JhengHei UI', 'Microsoft JhengHei', sans-serif;
               font-size: 2em;
+              letter-spacing: 2px;
             }
           }
           .p-content{
-            padding: 5px;
+            padding: 5px 5px 30px 5px;
             height: 100%;
             &.colright{
               float: right;
@@ -111,7 +110,6 @@
   }
 }
 
-
 /**
  * desktop
  */
@@ -143,9 +141,11 @@
               background-color: none;
               position: absolute;
               top: 50%;
-              transform: translate(-50%, -50%);
-              left: 50%;
+              transform: translate(50%, -50%);
             }
+          }
+          .p-content{
+            transform: translateX(250px);
           }
         }
       }
@@ -186,6 +186,9 @@
               top: 45%;
               position: relative;
             }
+          }
+          .p-content{
+            transform: translateX(250px);
           }
         }
       }

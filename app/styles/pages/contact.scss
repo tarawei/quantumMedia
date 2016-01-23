@@ -1,0 +1,172 @@
+@import "./untils";
+
+
+/**
+ * Pure
+ */
+&.contact{
+   .p-content{
+    img{
+     position: relative;
+     margin:0 auto;
+    }
+    .info{
+      padding: 0 20px;
+      .Quantum-title{
+        margin-bottom: 20px;
+        text-align: center;
+        h2{
+          font-size: 1.5em;
+          margin: 0;
+          padding: 0;
+        }
+        h3{
+          font-size: 1.6em;
+          margin: 0;
+          padding: 0;
+        }
+      }
+      .add{
+        margin-bottom: 20px;
+      }
+      .community{
+        margin-bottom: 20px;
+        .fb{
+          .icon{
+            position: absolute;
+            color: white;
+            font-size: 2em;
+            text-align: right;
+            width: 30px;
+            height: 30px;
+            margin-left: 8px;
+            margin-top: -5px;
+            padding: 0px 5px 2px 2px;
+            background: #3e5d96;
+            border-radius: 2px;
+          }
+        }
+      }
+      .person{
+        margin-bottom: 20px;
+        .qr{
+          background-image: url("../images/qr1.jpg");
+          background-size: contain;
+          width: 70px;
+          height: 70px;
+          position: absolute;
+          transform: translate(400px,-70px);
+        }
+        .qr2{
+          background-image: url("../images/qr1.jpg");
+          background-size: contain;
+          width: 70px;
+          height: 70px;
+          position: absolute;
+          transform: translate(400px,-70px);
+        }
+      }
+    }
+  }
+}
+
+
+/**
+ * mobile
+ */
+@media (max-width: $screen-xs-max) {
+  &.contact{
+    .container{
+      .title{
+        background-color: #7aa2d5;
+      }
+      .p-content{
+        img{
+        padding: 20px;
+         }
+       }
+    }
+  }
+}
+
+/**
+ * pad
+ */
+@media (min-width: $screen-sm-min) and (max-width: $screen-sm-max){
+  &.contact{
+      height: 100%;
+    .container{
+      height: inherit;
+      .title{
+        background-color: #7aa2d5;
+      }
+      .p-content{
+        height: initial;
+        img{
+        padding: 20px;
+        transform: translate(10%,115px);
+        }
+        .info{
+          transform: translate(10%, 20%);
+          .Quantum-title{
+            text-align: left;
+          }
+        }
+
+      }
+    }
+  }
+}
+
+
+/**
+ * desktop
+ */
+@media (min-width:$screen-md-min) and (max-width: $screen-md-max) {
+   &.contact{
+      height: 100%;
+    .title{
+      position: absolute;
+      background-color: none;
+            h1{
+        left: 0%;
+            }
+    }
+    .p-content{
+      -webkit-transform: translateX(235px);
+      img{
+      top: 40%;
+       }
+      .info{
+        transform:translateY(30%);
+        .Quantum-title{
+           text-align: left;
+        }
+      }
+    }
+  }
+}
+
+/**
+ * large
+ */
+ @media (min-width:$screen-lg-min) {
+   &.contact{
+      height: 100%;
+    .title{
+      position: absolute;
+      background-color: none;
+    }
+    .p-content{
+      img{
+      top: 35%;
+       }
+      .info{
+        transform:translateY(30%);
+        .Quantum-title{
+           text-align: left;
+        }
+      }
+    }
+  }
+}

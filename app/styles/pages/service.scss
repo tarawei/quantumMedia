@@ -1,15 +1,95 @@
+@import "./untils";
 
+
+/**
+ * Pure
+ */
 &.service{
+  min-height: 100%;
   height: auto;
-  .title{
-    background-color: #d47a7a;
+  .p-content{
+  	.service-box{
+  	  margin: 10px 0;
+  	  .list{
+  	  	height: 0px;
+    		padding: 0px 0px 120px 7px;
+    		color: 	white;
+    		font-size: 1.7em;
+    		letter-spacing: 0.8px;
+    		text-align: left;
+    		margin: 10px;
+  	  	&.visual{
+  	  		background: #b5872c;
+  	  	}
+  	  	&.Studio{
+  	  		background: #2c441e;
+  	  	}
+  	  	&.Edit{
+  	  		background: #e2bb3c;
+  	  	}
+  	  	&.Shooting{
+  	  		background: #a1bad3;
+  	  	}
+  	  }
+  	  .introductory{
+  	  	padding:0 10px;
+  	  }
+  	}
   }
 }
 
 /**
  * mobile
  */
+ @media (max-width: $screen-xs-max) {
+	&.service{
+	  .title{
+	  	background-color: #639faa;
+	  }
+	}
+}
+
+
+/**
+ * pad
+ */
+@media (min-width: $screen-sm-min) and (max-width: $screen-sm-max){
+	&.service{
+	  .title{
+	  	background-color: #639faa;
+	  }
+  	  .introductory{
+  	  	transform: translateY(40px);
+  	  }
+	}
+}
 
 /**
  * desktop
  */
+ @media (min-width:$screen-md-min) and (max-width: $screen-md-max) {
+	 &.service{
+	  .title{
+	  	position: absolute;
+	  	background-color: none;
+	  }
+  	  .introductory{
+  	  	transform: translateY(40px);
+  	  }
+	}
+ }
+
+ /**
+ * large
+ */
+ @media (min-width:$screen-lg-min) {
+	 &.service{
+	  .title{
+	  	position: absolute;
+	  	background-color: none;
+	  }
+  	  .introductory{
+  	  	transform: translateY(40px);
+  	  }
+	}
+ }

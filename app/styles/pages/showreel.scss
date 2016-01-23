@@ -1,15 +1,87 @@
+@import "./untils";
+
+
+/**
+ * Pure
+ */
 &.showreel{
   min-height: 100%;
   height: auto;
   .container-page{
     min-height: 100%;
+    .p-content{
+    	.show-box{
+			img{
+			  padding: 0;
+			}
+    	}
+    }
   }
 }
 
 /**
  * mobile
  */
+ @media (max-width: $screen-xs-max) {
+	&.showreel{
+	  .title{
+	  	background-color: #d47a7a;
+	  }
+	   .p-content{
+	    .show-box{
+			margin: 20px 0;
+	    }
+	   }
+	}
+}
+
+
+/**
+ * pad
+ */
+@media (min-width: $screen-sm-min) and (max-width: $screen-sm-max){
+	&.showreel{
+	  .title{
+	  	background-color: #d47a7a;
+	  }
+	  .show-box{
+	    margin: 20px 0;
+	  }
+	}
+}
 
 /**
  * desktop
  */
+ @media (min-width:$screen-md-min) and (max-width: $screen-md-max) {
+	 &.showreel{
+	  .title{
+	  	position: absolute;
+	  	background-color: none;
+	  }
+	  .p-content{
+	   .show-box{
+		margin: 10px 0;
+		top:35px;
+	   }
+	  }
+	}
+ }
+
+ /**
+ * large
+ */
+ @media (min-width:$screen-lg-min) {
+	 &.showreel{
+	  .title{
+	  	position: absolute;
+	  	background-color: none;
+	  }
+	  .p-content{
+	   .show-box{
+		margin: 10px 0;
+		top:35px;
+	   }
+	  }
+	}
+ }

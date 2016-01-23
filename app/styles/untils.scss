@@ -5,15 +5,5 @@
 @mixin bg-gray($color, $opacity){
   background-color: rgba($color,$color,$color, $opacity);
 }
-@mixin abouttitle($color){
-	background-color:  #538526;
-}
-@mixin servicetitle($color){
-	background-color: #639faa;
-}
-@mixin showreeltitle($color){
-	background-color: #d47a7a;
-}
-@mixin contacttitle($color){
-	background-color: #7aa2d5;
-}
+
+$header-height: 184px;
