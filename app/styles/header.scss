@@ -28,6 +28,12 @@
       font-family: 'Microsoft JhengHei UI', 'Microsoft JhengHei', sans-serif;
       a{
         color: black;
+        &:hover{
+          color:white;
+        }
+        &:focus{
+          color:white;
+        }
       }
     }
   }

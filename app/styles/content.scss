@@ -14,10 +14,10 @@
       &:first-of-type{
         position: relative;
         background-color: transparent;
-        display: none;
+
       }
 
-      &.about-us, &.service, &.showreel{
+      &.contact, &.about-us, &.service, &.showreel{
         display: none;
       }
 
