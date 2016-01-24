@@ -55,7 +55,7 @@
           width: 70px;
           height: 70px;
           position: absolute;
-          transform: translate(400px,-70px);
+          transform: translate(410px,-65px);
         }
         .qr2{
           background-image: url("../images/qr1.jpg");
@@ -63,7 +63,7 @@
           width: 70px;
           height: 70px;
           position: absolute;
-          transform: translate(400px,-70px);
+          transform: translate(410px,-65px);
         }
       }
     }
@@ -100,21 +100,24 @@
       .title{
         background-color: #7aa2d5;
       }
+    }
       .p-content{
         height: initial;
         img{
         padding: 20px;
-        transform: translate(10%,115px);
+        top: 80px;
+        transform: translateX(8%);
         }
         .info{
-          transform: translate(10%, 20%);
+          top: 60px;
+          transform: translateX(2px);
+          left: 1%;
           .Quantum-title{
             text-align: left;
           }
         }
 
       }
-    }
   }
 }
 
@@ -128,9 +131,10 @@
     .title{
       position: absolute;
       background-color: none;
-            h1{
-        left: 0%;
-            }
+        h1{
+        left: -5%;
+        top: 50%;
+        }
     }
     .p-content{
       -webkit-transform: translateX(235px);
@@ -138,7 +142,8 @@
       top: 40%;
        }
       .info{
-        transform:translateY(30%);
+        top: 50%;
+        transform: translateY(-145px);
         .Quantum-title{
            text-align: left;
         }
@@ -159,10 +164,11 @@
     }
     .p-content{
       img{
-      top: 35%;
+      top: 37%;
        }
       .info{
-        transform:translateY(30%);
+        top: 50%;
+        transform: translateY(-145px);
         .Quantum-title{
            text-align: left;
         }

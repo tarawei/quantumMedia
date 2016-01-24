@@ -9,7 +9,7 @@
   height: auto;
   .p-content{
   	.service-box{
-  	  margin: 10px 0;
+  	  margin: 20px 0px -20px 0px;
   	  .list{
   	  	height: 0px;
     		padding: 0px 0px 120px 7px;
@@ -32,7 +32,7 @@
   	  	}
   	  }
   	  .introductory{
-  	  	padding:0 10px;
+  	  	padding:10px;
   	  }
   	}
   }
@@ -84,12 +84,17 @@
  */
  @media (min-width:$screen-lg-min) {
 	 &.service{
-	  .title{
-	  	position: absolute;
-	  	background-color: none;
-	  }
-  	  .introductory{
-  	  	transform: translateY(40px);
-  	  }
-	}
- }
+    .p-content{
+      .service-box{
+        margin: 50px 0px -20px 0px;
+        .title{
+          position: absolute;
+          background-color: none;
+        }
+        .introductory{
+          transform: translateY(40px);
+        }
+      }
+    }
+  }
+}

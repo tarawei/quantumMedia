@@ -17,7 +17,9 @@
         display: none;
       }
 
-
+      &.about-us, &.service, &.showreel{
+        display: none;
+      }
 
       &:not(:first-of-type){
         background-color: #ecf1f5;
@@ -145,14 +147,13 @@
             }
           }
           .p-content{
-            transform: translateX(250px);
+            transform: translateX(230px);
           }
         }
       }
     }
   }
 }
-
 
 /**
  * large
