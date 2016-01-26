@@ -14,6 +14,7 @@
   }
   .page-block{
     display: table-cell;
+    width: calc(100% / 5);
     &:first-of-type>.page{
       // display: none;
     }
@@ -71,6 +72,7 @@
 @media (max-width: $screen-xs-max) {
   .content{
     top: 101px;
+    height: calc(100% - 101px);
     .page-block{
       .page-nobg{
         top: 50px;
