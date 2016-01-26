@@ -1,4 +1,5 @@
 jQuery(document).ready(function($) {
+
 	$(".toggle").on("click", function(){
 		$(".nav").toggleClass("close-nav");
 	});
@@ -10,4 +11,12 @@ jQuery(document).ready(function($) {
   });
 
   $(window).trigger("resize");
+
+  $(window).on("hashchange", function(e){
+    var hash = location.hash.replace("#", ".");
+    hash = (hash === ""?".kv":hash);
+    $(".pages-block").css("left", -($(".page").index($(hash)) * $(window).width())+'px');
+  });
+
+  $(window).trigger("hashchange");
 });

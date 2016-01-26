@@ -6,9 +6,11 @@
 .content{
   position: relative;
   height: calc(100% - #{$header-height});
-  // overflow-x: hidden;
+  overflow-x: hidden;
   .pages-block{
     display: table;
+    transition: all .3s;
+    position: absolute;
   }
   .page-block{
     display: table-cell;
@@ -93,6 +95,8 @@
   .content{
     top: 190px;
     .page-block{
+      overflow-x: hidden;
+      text-align: center;
       .page-nobg{
         top: 60px;
       }
