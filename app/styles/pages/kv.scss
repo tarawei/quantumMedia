@@ -14,7 +14,35 @@
 /**
  * mobile
  */
+@media (max-width: $screen-xs-max) {
+  &.kv{
+    height: 380px;
+  }
+}
+
+/**
+ * pad
+ */
+@media (min-width: $screen-sm-min) and (max-width: $screen-sm-max){
+  &.kv{
+    height: 400px;
+  }
+}
 
 /**
  * desktop
  */
+@media (min-width:$screen-md-min) and (max-width: $screen-md-max) {
+  &.kv{
+    height: 400px;
+  }
+}
+
+/**
+ * large
+ */
+@media (min-width:$screen-lg-min) {
+  &.kv{
+    height: 400px;
+  }
+}
