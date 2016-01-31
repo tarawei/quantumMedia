@@ -20,8 +20,12 @@ jQuery(document).ready(function($) {
   $(window).trigger("hashchange");
 
   function rePostion(){
+    $(".page-block").removeClass("height1");
     var hash = location.hash.replace("#", ".");
     hash = (hash === ""?".kv":hash);
     $(".pages-block").css("left", -($(".page").index($(hash)) * $(window).width())+'px');
+    setTimeout(function(){
+      $(".page:not(" + hash + ")").parent().addClass("height1");
+    }, 500);
   }
 });
