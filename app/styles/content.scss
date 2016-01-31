@@ -6,7 +6,7 @@
 .content{
   position: relative;
   height: calc(100% - #{$header-height});
-  overflow-x: hidden;
+  // overflow-x: hidden;
   .pages-block{
     // display: table;
     transition: all .3s;
@@ -103,7 +103,7 @@
   .content{
     top: 190px;
     .page-block{
-      overflow-x: hidden;
+      // overflow-x: hidden;
       text-align: center;
       .page-nobg{
         top: 60px;
@@ -131,7 +131,7 @@
     height: calc(100% - 205px);
     top: 190px;
     .page-block{
-      overflow-x: hidden;
+      // overflow-x: hidden;
       text-align: center;
       .page-nobg{
         top: 60px;
@@ -177,7 +177,7 @@
     height: calc(100% - 205px);
     top: 188px;
     .page-block{
-      overflow-x: hidden;
+      // overflow-x: hidden;
       text-align: center;
       .page-nobg{
         top: 70px;
