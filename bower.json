@@ -4,7 +4,8 @@
   "dependencies": {
     "bootstrap-sass": "~3.3.5",
     "modernizr": "~2.8.1",
-    "fastclick": "~1.0.6"
+    "fastclick": "~1.0.6",
+    "jquery-colorbox": "colorbox#~1.6.3"
   },
   "overrides": {
     "bootstrap-sass": {

@@ -28,6 +28,10 @@
       font-family: 'Microsoft JhengHei UI', 'Microsoft JhengHei', sans-serif;
       a{
         color: black;
+        &:hover{
+          color: #fff;
+          background-color: darken(#b8b7b7, 10%);
+        }
       }
     }
   }
@@ -83,6 +87,9 @@
         font-size: 1.2em;
         border-bottom: 1px solid rgba(0,0,0,.11);
         display: block;
+        a:hover{
+          background-color: transparent;
+        }
       }
     }
   }
