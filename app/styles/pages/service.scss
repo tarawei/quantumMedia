@@ -5,8 +5,6 @@
  * Pure
  */
 &.service{
-  min-height: 100%;
-  height: auto;
   .p-content{
   	.service-box{
   	  margin: 10px 0;
@@ -69,6 +67,7 @@
  */
  @media (min-width:$screen-md-min) and (max-width: $screen-md-max) {
 	 &.service{
+      height: 630px;
 	  .title{
 	  	position: absolute;
 	  	background-color: none;
@@ -84,6 +83,7 @@
  */
  @media (min-width:$screen-lg-min) {
 	 &.service{
+      height: 630px;
 	  .title{
 	  	position: absolute;
 	  	background-color: none;

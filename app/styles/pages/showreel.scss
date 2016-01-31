@@ -5,8 +5,6 @@
  * Pure
  */
 &.showreel{
-  min-height: 100%;
-  height: auto;
   .container-page{
     min-height: 100%;
     .p-content{
@@ -55,6 +53,7 @@
  */
  @media (min-width:$screen-md-min) and (max-width: $screen-md-max) {
 	 &.showreel{
+	 	height: 490px;
 	  .title{
 	  	position: absolute;
 	  	background-color: none;
@@ -73,6 +72,7 @@
  */
  @media (min-width:$screen-lg-min) {
 	 &.showreel{
+	 	height: 490px;
 	  .title{
 	  	position: absolute;
 	  	background-color: none;
