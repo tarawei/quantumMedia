@@ -26,6 +26,6 @@ jQuery(document).ready(function($) {
     $(".pages-block").css("left", -($(".page").index($(hash)) * $(window).width())+'px');
     setTimeout(function(){
       $(".page:not(" + hash + ")").parent().addClass("height1");
-    }, 700);
+    }, 600);
   }
 });

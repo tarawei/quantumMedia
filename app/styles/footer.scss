@@ -11,6 +11,9 @@
   bottom: 0px;
   width: 100%;
   @include bg-gray(56, .8);
+  p{
+    margin: 5px 0 -5px;
+  }
   .copyright{
   	margin: 5px;
   	font-size: 0.8em;

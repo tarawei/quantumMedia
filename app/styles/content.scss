@@ -11,11 +11,13 @@
     // display: table;
     transition: all 0.8s;
     position: absolute;
+    height: 100%;
   }
   .page-block{
     // display: table-cell;
     width: calc(100% / 5);
     float: left;
+    height: 100%;
     &:first-of-type>.page{
       // display: none;
     }

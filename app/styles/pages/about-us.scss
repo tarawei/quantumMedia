@@ -13,6 +13,7 @@
 	  .txt{
 	  	p{
 	  		position: relative;
+	  		text-align: left;
 	  	}
 	  }
     }
@@ -23,6 +24,7 @@
  */
 @media (max-width: $screen-xs-max) {
 	&.about-us{
+	  height: auto;
 	  .title{
 	  	background-color: #538526;
 	  }
@@ -35,17 +37,31 @@
 
 }
 
+
+/**
+ * 400~767
+ */
+@media (min-width: 450px) and (max-width: 767px){
+	&.about-us{
+	  height: 96%;
+	}
+}
+
 /**
  * pad
  */
 @media (min-width: $screen-sm-min) and (max-width: $screen-sm-max){
 	&.about-us{
+	  height: 100%;
 	  .title{
 	  	background-color: #538526;
 	  }
 	  .p-content{
 	    img{
-		  padding: 50px;
+		  width: 60%;
+		  left: 20%;
+		  top: 20px;
+		  margin-bottom: 50px;
 	  	 }
 	   }
 	}
@@ -57,7 +73,7 @@
  */
 @media (min-width:$screen-md-min) and (max-width: $screen-md-max) {
 	 &.about-us{
-	 	height: 490px;
+	   height: 100%;
 	  .title{
 	  	position: absolute;
 	  	background-color: none;
@@ -83,7 +99,7 @@
  */
  @media (min-width:$screen-lg-min) {
 	 &.about-us{
-	 	height: 490px;
+	   height: 100%;	
 	  .title{
 	  	position: absolute;
 	  	background-color: none;

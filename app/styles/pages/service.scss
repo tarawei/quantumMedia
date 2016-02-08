@@ -6,33 +6,30 @@
  */
 &.service{
   .p-content{
-  	.service-box{
-  	  margin: 10px 0;
-  	  .list{
-  	  	height: 0px;
-    		padding: 0px 0px 120px 7px;
-    		color: 	white;
-    		font-size: 1.7em;
-    		letter-spacing: 0.8px;
-    		text-align: left;
-    		margin: 10px;
-  	  	&.visual{
-  	  		background: #b5872c;
-  	  	}
-  	  	&.Studio{
-  	  		background: #2c441e;
-  	  	}
-  	  	&.Edit{
-  	  		background: #e2bb3c;
-  	  	}
-  	  	&.Shooting{
-  	  		background: #a1bad3;
-  	  	}
+  	 .list{
+  	  height: 0px;
+    	padding: 0px 0px 120px 7px;
+    	color: 	white;
+    	font-size: 1.7em;
+    	letter-spacing: 0.8px;
+    	text-align: left;
+    	margin: 10px;
+  	  &.visual{
+  	  	background: #b5872c;
   	  }
-  	  .introductory{
-  	  	padding:0 10px;
+  	  &.Studio{
+  	  	background: #2c441e;
   	  }
-  	}
+  	  &.Edit{
+  	  	background: #e2bb3c;
+  	  }
+  	  &.Shooting{
+  	  	background: #a1bad3;
+  	  }
+  	 }
+  	 .introductory{
+  	 	padding:0 10px;
+  	 }
   }
 }
 
@@ -41,10 +38,24 @@
  */
  @media (max-width: $screen-xs-max) {
 	&.service{
+    height: auto;
 	  .title{
 	  	background-color: #639faa;
 	  }
+    .service-box{
+      margin: 10px 0;
+    }
 	}
+}
+
+
+/**
+ * 400~767
+ */
+@media (min-width: 450px) and (max-width: 767px){
+  &.service{
+    height: auto;
+  }
 }
 
 
@@ -53,12 +64,16 @@
  */
 @media (min-width: $screen-sm-min) and (max-width: $screen-sm-max){
 	&.service{
-	  .title{
-	  	background-color: #639faa;
-	  }
-  	  .introductory{
-  	  	transform: translateY(40px);
-  	  }
+    height: 100%;
+    .title{
+      background-color: #639faa;
+    }
+    .service-box{
+      margin: 20px 0 10px 0;
+      .introductory{
+        transform: translateY(40px);
+      }
+    }
 	}
 }
 
@@ -67,7 +82,7 @@
  */
  @media (min-width:$screen-md-min) and (max-width: $screen-md-max) {
 	 &.service{
-      height: 630px;
+     height: auto;
 	  .title{
 	  	position: absolute;
 	  	background-color: none;
@@ -83,7 +98,7 @@
  */
  @media (min-width:$screen-lg-min) {
 	 &.service{
-      height: 630px;
+     height: 100%;
 	  .title{
 	  	position: absolute;
 	  	background-color: none;
@@ -93,3 +108,12 @@
   	  }
 	}
  }
+
+ /**
+ * 1280~1366
+ */
+@media (min-width: 1280px) and (max-width: 1366px){
+  &.service{
+    height: auto;
+  }
+}
