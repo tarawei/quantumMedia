@@ -28,4 +28,7 @@ jQuery(document).ready(function($) {
       $(".page:not(" + hash + ")").parent().addClass("height1");
     }, 600);
   }
+  function OpenLink(link) {     
+  parent.$.colorbox({ href: link, iframe: true, width: "50%", height: "50%" });
+  }
 });

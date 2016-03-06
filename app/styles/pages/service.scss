@@ -64,7 +64,7 @@
  */
 @media (min-width: $screen-sm-min) and (max-width: $screen-sm-max){
 	&.service{
-    height: 100%;
+    height: auto;
     .title{
       background-color: #639faa;
     }
